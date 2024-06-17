@@ -1,0 +1,60 @@
+.remove-btn {
+  margin-right: 0.5rem;
+}
+
+/*FADE 300*/
+.fade300-enter {
+  opacity: 0;
+}
+
+.fade300-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear;
+}
+
+.fade300-exit {
+  opacity: 1;
+}
+
+.fade300-exit-active {
+  opacity: 0;
+  transition: opacity 300ms linear;
+}
+
+/*FADE 500*/
+.fade500-enter {
+  opacity: 0;
+}
+
+.fade500-enter-active {
+  opacity: 1;
+  transition: opacity 500ms linear;
+}
+
+.fade500-exit {
+  opacity: 1;
+}
+
+.fade500-exit-active {
+  opacity: 0;
+  transition: opacity 500ms linear;
+}
+
+/*FADE 400*/
+.fade400-enter {
+  opacity: 0;
+}
+
+.fade400-enter-active {
+  opacity: 1;
+  transition: opacity 400ms linear;
+}
+
+.fade400-exit {
+  opacity: 1;
+}
+
+.fade400-exit-active {
+  opacity: 0;
+  transition: opacity 400ms linear;
+}
