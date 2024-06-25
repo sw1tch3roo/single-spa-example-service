@@ -12,5 +12,5 @@ export const { bootstrap, mount, unmount } = singleSpaReact({
     console.log('err:', err)
     console.log('info:', info)
     return null
-  },
+  }
 })

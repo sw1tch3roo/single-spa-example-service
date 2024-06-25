@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "outDir": "./dist/",
-    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "baseUrl": ".",
     "paths": {
@@ -13,28 +12,26 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "ESNext",
+    "module": "esnext",
+    "target": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "jsxImportSource": "@emotion/react",
     "incremental": true,
-    "types": ["vite/client", "node"]
+    "types": ["vite/client", "node", "vitest/globals"]
   },
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"
     }
   },
-  "include": [
-    "./config/jest/setupTests.ts",
-    "types/**/*",
-    "**/*.ts",
-    "**/*.tsx",
-    "@types"
-  ],
-  "exclude": ["node_modules", "**/*.cy.*"],
+  "include": ["types/**/*", "**/*.ts", "**/*.tsx", "@types", "setupTests.ts"],
+  "exclude": ["node_modules", "**/*.cy.*", "vite.config.ts"],
   "typeRoots": ["declaration.d.ts"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
 }

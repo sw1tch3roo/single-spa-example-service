@@ -8,3 +8,4 @@ README.md
 .editorconfig
 .gitlab-ci.yml
 .deploy
+.env
