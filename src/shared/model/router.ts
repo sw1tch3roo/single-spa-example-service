@@ -1,12 +1,12 @@
 export enum AppRoutes {
-    ROOT = 'root',
-    MAIN = 'main',
-    LOGIN = 'login',
+  ROOT = 'root',
+  MAIN = 'main',
+  LOGIN = 'login',
 
-    NOT_FOUND = 'not_found',
+  NOT_FOUND = 'not_found'
 }
 
 export const getRoutes = () => ({
-    getRouteMain: () => '/main',
-    getRouteLogin: () => '/login',
+  getRouteMain: () => '/main',
+  getRouteLogin: () => '/login'
 })
