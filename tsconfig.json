@@ -1,11 +1,16 @@
 {
   "compilerOptions": {
     "outDir": "./dist/",
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": [
+        "src/*"
+      ]
     },
     "allowJs": true,
     "skipLibCheck": true,
@@ -13,14 +18,18 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "ESNext",
+    "module": "esnext",
+    "target": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "jsxImportSource": "@emotion/react",
     "incremental": true,
-    "types": ["vite/client", "node"]
+    "types": [
+      "vite/client",
+      "node",
+      "vitest/globals"
+    ]
   },
   "ts-node": {
     "compilerOptions": {
@@ -28,13 +37,23 @@
     }
   },
   "include": [
-    "./config/jest/setupTests.ts",
     "types/**/*",
     "**/*.ts",
     "**/*.tsx",
-    "@types"
+    "@types",
+    "setupTests.ts"
   ],
-  "exclude": ["node_modules", "**/*.cy.*"],
-  "typeRoots": ["declaration.d.ts"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "exclude": [
+    "node_modules",
+    "**/*.cy.*",
+    "vite.config.ts"
+  ],
+  "typeRoots": [
+    "declaration.d.ts"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
 }
